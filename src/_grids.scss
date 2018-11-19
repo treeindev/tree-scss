@@ -1,0 +1,20 @@
+.layout-main {
+    // Layout limit applies only if value is set
+    @if $layout-limit {
+        max-width: $layout-limit;
+    }
+    display: block;
+    margin: 0 auto;
+}
+
+.container-flex {
+    display: flex;
+
+    > * {
+        width: 100%;
+    }
+
+    &.no-wrap {
+        flex-wrap: nowrap;
+    }
+}

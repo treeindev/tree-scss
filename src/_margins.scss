@@ -1,0 +1,12 @@
+$margin-amount: 20;
+
+// Generic margins
+@mixin margin-generator {
+    @for $i from 1 through $margin-amount {
+        .m-g-#{$i} {
+            margin: ($i*5) px;
+        }
+    }
+}
+
+@include margin-generator;

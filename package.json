@@ -1,0 +1,32 @@
+{
+    "name": "tree-scss",
+    "version": "0.0.0",
+    "description": "A SASS library with basic elements for building intuitive and powerful user interfaces (UI)",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "grunt build"
+    },
+    "keywords": [
+        "sass",
+        "styles",
+        "css",
+        "ui",
+        "library",
+        "animations",
+        "grids",
+        "typography",
+        "flex"
+    ],
+    "author": "treeindev.net",
+    "license": "ISC",
+    "devDependencies": {
+        "grunt": "^1.0.3",
+        "grunt-contrib-cssmin": "3.0.0",
+        "grunt-sass": "^3.0.2",
+        "load-grunt-tasks": "^4.0.0"
+    },
+    "dependencies": {
+        "node-sass": "^4.5.3"
+    }
+}

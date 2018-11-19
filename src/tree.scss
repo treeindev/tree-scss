@@ -1,0 +1,13 @@
+////
+//// Tree-scss: root file for the library
+////
+////
+@import 'variables';
+@import 'grids';
+@import 'margins';
+
+// To test
+.item {
+    background-color: #7e7c87;
+    height: 120px;
+}
