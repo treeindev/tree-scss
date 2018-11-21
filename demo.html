@@ -3,15 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <title>Tree-scss UI library</title>
-    <link rel="stylesheet" href="css/tree.min.css">
+    <link rel="stylesheet" href="dist/tree.min.css">
+    <style>
+        .preview-item {
+            background-color: #e2e1e4e0;
+            height: 60px;
+        }
+
+        .preview-item2 {
+            background-color: rgba(129, 186, 203, 0.88);
+            height: 60px;
+        }
+    </style>
 </head>
 
 <body>
 <div class="layout-main">
-    <div class="container-flex">
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
+    <h2>Grids</h2>
+    <h3>Equal Width</h3>
+    <div class="grid">
+        <div class="preview-item m-g-10"></div>
+    </div>
+    <div class="grid">
+        <div class="preview-item m-g-10"></div>
+        <div class="preview-item m-g-10"></div>
+    </div>
+    <div class="grid">
+        <div class="preview-item m-g-10"></div>
+        <div class="preview-item m-g-10"></div>
+        <div class="preview-item m-g-10"></div>
+    </div>
+    <div class="grid responsive tablet">
+        <div class="preview-item m-g-10"></div>
+        <div class="preview-item m-g-10"></div>
+        <div class="preview-item m-g-10"></div>
+        <div class="preview-item m-g-10"></div>
+    </div>
+    <h3>Variable Width</h3>
+    <div class="grid">
+        <div class="preview-item m-g-10 w-20"></div>
+    </div>
+    <div class="grid">
+        <div class="preview-item m-g-10 w-30"></div>
+        <div class="preview-item m-g-10 w-40"></div>
+    </div>
+    <div class="grid wrap">
+        <div class="preview-item m-g-10 w-50"></div>
+        <div class="preview-item m-g-10 w-10"></div>
+        <div class="preview-item m-g-10 w-40"></div>
+    </div>
+    <div class="grid">
+        <div class="preview-item m-g-10 w-20"></div>
+        <div class="preview-item m-g-10 w-40"></div>
+        <div class="preview-item m-g-10 w-30"></div>
+        <div class="preview-item m-g-10 w-10"></div>
+    </div>
+    <h3>Alignment</h3>
+    <div class="grid center m-b-20">
+        <div class="preview-item m-r-10 w-30"></div>
+        <div class="preview-item m-r-10 w-30"></div>
+        <div class="preview-item m-r-10 w-30"></div>
+    </div>
+    <div class="grid m-b-20">
+        <div class="preview-item m-r-10 w-30"></div>
+        <div class="preview-item m-r-10 w-30"></div>
+        <div class="preview-item m-r-10 w-30"></div>
+    </div>
+    <div class="grid end m-b-20">
+        <div class="preview-item m-r-10 w-30"></div>
+        <div class="preview-item m-r-10 w-30"></div>
+        <div class="preview-item m-r-10 w-30"></div>
+    </div>
+    <h3>Combined grids</h3>
+    <div class="grid responsive mobile center m-b-20">
+        <div class="preview-item m-r-10 w-10"></div>
+        <div class="grid responsive tablet center">
+            <div class="preview-item2 m-r-10 w-30"></div>
+            <div class="preview-item2 m-r-10 w-40"></div>
+            <div class="preview-item2 m-r-10 w-30"></div>
+        </div>
+        <div class="preview-item m-r-10 w-10"></div>
+    </div>
+    <div class="grid center m-b-20">
+        <div class="preview-item m-r-10 w-70"></div>
+        <div class="grid center w-20">
+            <div class="preview-item2 m-r-10 w-50"></div>
+            <div class="preview-item2 m-r-10 w-50"></div>
+        </div>
+        <div class="preview-item m-r-10 w-10"></div>
+    </div>
+    <div class="grid center m-b-20">
+        <div class="preview-item m-r-10 w-10"></div>
+        <div class="grid center w-20">
+            <div class="preview-item2 m-r-10 w-50"></div>
+            <div class="preview-item2 m-r-10 w-50"></div>
+        </div>
+        <div class="preview-item m-r-10 w-70"></div>
     </div>
 </div>
 </body>

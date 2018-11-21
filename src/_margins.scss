@@ -1,12 +1,37 @@
+// MARGINS
 $margin-amount: 20;
 
-// Generic margins
 @mixin margin-generator {
     @for $i from 1 through $margin-amount {
-        .m-g-#{$i} {
-            margin: ($i*5) px;
+        .m-g-#{$i*5} {
+            margin: ($i*5)+px;
+        }
+        .m-t-#{$i*5} {
+            margin-top: ($i*5)+px;
+        }
+        .m-b-#{$i*5} {
+            margin-bottom: ($i*5)+px;
+        }
+        .m-r-#{$i*5} {
+            margin-right: ($i*5)+px;
+        }
+        .m-l-#{$i*5} {
+            margin-left: ($i*5)+px;
         }
     }
 }
 
 @include margin-generator;
+
+// SIZES
+$size-amount: 10;
+
+@mixin size-generator {
+    @for $i from 1 through $size-amount {
+        .w-#{$i*10} {
+            width: ($i*10)+%;
+        }
+    }
+}
+
+@include size-generator;

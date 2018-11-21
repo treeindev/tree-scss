@@ -11,7 +11,7 @@ module.exports = function (grunt) {
             },
             dist: {
                 files: {
-                    'css/tree.css': 'src/tree.scss'
+                    'dist/tree.css': 'src/tree.scss'
                 }
             }
         },
@@ -22,7 +22,7 @@ module.exports = function (grunt) {
             },
             target: {
                 files: {
-                    'css/tree.min.css': 'css/tree.css'
+                    'dist/tree.min.css': 'dist/tree.css'
                 }
             }
         }

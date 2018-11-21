@@ -7,14 +7,58 @@
     margin: 0 auto;
 }
 
-.container-flex {
+.grid {
     display: flex;
 
     > * {
         width: 100%;
     }
 
-    &.no-wrap {
-        flex-wrap: nowrap;
+    // Flex attributes
+    &.wrap {
+        flex-wrap: wrap;
+    }
+    &.end {
+        justify-content: flex-end;
+    }
+    &.center {
+        justify-content: center;
+    }
+    &.space {
+        justify-content: space-between;
+    }
+
+    // Responsiveness
+    &.responsive {
+
+        // Using @mixin for an extendable inheritance
+        @mixin responsive-flex {
+            flex-wrap: wrap;
+            > * {
+                width: 100%;
+            }
+        }
+
+        &.mobile {
+            @media (max-width: $device-mobile) {
+                @include responsive-flex;
+            }
+        }
+        &.tablet {
+            @media (max-width: $device-tablet) {
+                @include responsive-flex;
+            }
+        }
+        &.small {
+            @media (max-width: $device-small) {
+                @include responsive-flex;
+            }
+        }
+        &.laptop {
+            @media (max-width: $device-laptop) {
+                @include responsive-flex;
+            }
+        }
+
     }
 }
