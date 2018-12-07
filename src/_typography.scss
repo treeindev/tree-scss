@@ -2,9 +2,11 @@ body {
     font-family: $typography-main;
 }
 
+
+
 h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
     display: block;
-    font-weight: initial;
+    font-weight: $typography-headlines-weight;
     margin: $typography-headlines-margin;
 }
 

@@ -3,7 +3,8 @@ $layout-limit: 1280px;
 
 // Typography
 $typography-main: 'Open Sans', sans-serif;
-$typography-headlines-margin: 10px 0px;
+$typography-headlines-margin: 1em 0;
+$typography-headlines-weight: bold;
 
 // Breakpoints
 $device-mobile: 480px;

@@ -371,8 +371,8 @@ body {
 
 h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
   display: block;
-  font-weight: initial;
-  margin: 10px 0px; }
+  font-weight: bold;
+  margin: 1em 0; }
 
 h1, .h1 {
   font-size: 2rem; }
