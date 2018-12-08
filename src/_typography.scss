@@ -2,8 +2,7 @@ body {
     font-family: $typography-main;
 }
 
-
-
+// Headlines
 h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
     display: block;
     font-weight: $typography-headlines-weight;
@@ -28,4 +27,15 @@ h4, .h4 {
 
 h5, .h5 {
     font-size: 0.83rem;
+}
+
+// Links
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: $colours-primary;
+
+    &:hover {
+        color: darken($colours-primary, 10%);
+    }
 }

@@ -2,7 +2,10 @@
 //// Tree-scss: root file for the library
 ////
 ////
+// Base files
 @import 'variables';
 @import 'grids';
 @import 'margins';
 @import 'typography';
+// Components
+@import './components/colour-palette/main';

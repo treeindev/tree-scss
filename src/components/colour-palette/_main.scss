@@ -1,3 +1,27 @@
-.t-cmp__colour-palette {
-    display: block;
+.cmp__palette {
+    .cmp__palette-item {
+        height: 84px;
+        padding: 20px 15px 15px;
+
+        &.primary {
+            background-color: $colours-primary;
+            color: $colours-white;
+        }
+
+        &.secondary {
+            background-color: $colours-secondary;
+            color: $colours-dark;
+        }
+
+        &.dark {
+            background-color: $colours-dark;
+            color: $colours-white;
+        }
+
+        &.white {
+            background-color: $colours-white;
+            color: $colours-dark;
+            border: 1px solid #d0d0d0;
+        }
+    }
 }

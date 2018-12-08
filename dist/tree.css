@@ -388,3 +388,27 @@ h4, .h4 {
 
 h5, .h5 {
   font-size: 0.83rem; }
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #009bff; }
+  a:hover {
+    color: #007ccc; }
+
+.cmp__palette .cmp__palette-item {
+  height: 84px;
+  padding: 20px 15px 15px; }
+  .cmp__palette .cmp__palette-item.primary {
+    background-color: #009bff;
+    color: #ffffff; }
+  .cmp__palette .cmp__palette-item.secondary {
+    background-color: #cfb584;
+    color: #202529; }
+  .cmp__palette .cmp__palette-item.dark {
+    background-color: #202529;
+    color: #ffffff; }
+  .cmp__palette .cmp__palette-item.white {
+    background-color: #ffffff;
+    color: #202529;
+    border: 1px solid #d0d0d0; }
