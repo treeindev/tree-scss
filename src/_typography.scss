@@ -38,4 +38,38 @@ a {
     &:hover {
         color: darken($colours-primary, 10%);
     }
+
+    &.underscored {
+        border-bottom: 1px solid $colours-primary;
+        padding-bottom: 2px;
+        font-weight: initial;
+    }
+}
+
+// Text
+.quote {
+    font-style: italic;
+    border-left: 3px solid $colours-primary;
+    padding: 8px 20px;
+    font-size: 21px;
+
+    &.small {
+        font-size: 13px;
+    }
+}
+
+// Lists
+ul, ol {
+    li {
+        margin: 15px 0px;
+    }
+}
+
+// Colours
+.colored {
+    color: $colours-primary;
+}
+
+.colored-secondary {
+    color: $colours-secondary;
 }

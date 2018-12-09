@@ -395,6 +395,27 @@ a {
   color: #009bff; }
   a:hover {
     color: #007ccc; }
+  a.underscored {
+    border-bottom: 1px solid #009bff;
+    padding-bottom: 2px;
+    font-weight: initial; }
+
+.quote {
+  font-style: italic;
+  border-left: 3px solid #009bff;
+  padding: 8px 20px;
+  font-size: 21px; }
+  .quote.small {
+    font-size: 13px; }
+
+ul li, ol li {
+  margin: 15px 0px; }
+
+.colored {
+  color: #009bff; }
+
+.colored-secondary {
+  color: #cfb584; }
 
 .cmp__palette .cmp__palette-item {
   height: 84px;

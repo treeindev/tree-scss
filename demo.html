@@ -22,130 +22,193 @@
 <body>
 <div class="layout-main">
     <h2>Tree SCSS</h2>
-    <h2>Colours</h2>
-    <div class="cmp__palette grid responsive tablet">
-        <div class="cmp__palette-item primary w-20 m-r-10">
-            <span>Primary Colours</span>
+    <div class="grid wrap">
+        <div class="m-g-10 w-10">
+            <h2>Colours</h2>
         </div>
-        <div class="cmp__palette-item secondary w-20 m-r-10">
-            <span>Secondary Colour</span>
+        <div class="m-g-10 w-80">
+            <h3 class="m-t-30">Palette</h3>
+            <div class="cmp__palette grid responsive tablet">
+                <div class="cmp__palette-item primary w-20 m-r-10">
+                    <span>Primary Colours</span>
+                </div>
+                <div class="cmp__palette-item secondary w-20 m-r-10">
+                    <span>Secondary Colour</span>
+                </div>
+                <div class="cmp__palette-item dark w-20 m-r-10">
+                    <span>Dark Colour</span>
+                </div>
+                <div class="cmp__palette-item white w-20 m-r-10">
+                    <span>White Colour</span>
+                </div>
+            </div>
+            <h3 class="m-t-30">Colored classes</h3>
+            <p class="colored"><strong>Primary class:</strong> Used to color any text element with the primary colour
+            </p>
+            <p class="colored-secondary"><strong>Secondary class:</strong> Used to color any text element with the
+                secondary
+                colour
+            </p>
         </div>
-        <div class="cmp__palette-item dark w-20 m-r-10">
-            <span>Dark Colour</span>
+    </div>
+
+    <div class="grid wrap">
+        <div class="m-g-10 w-10">
+            <h2>Text & Typo</h2>
         </div>
-        <div class="cmp__palette-item white w-20 m-r-10">
-            <span>White Colour</span>
+        <div class="m-g-10 w-80">
+            <p class="quote">Default Quote: Text is the primary way that users digest content and accomplish work, so
+                it’s
+                important to use good typographic principles to establish a clear visual hierarchy and to maximize
+                legibility.</p>
+            <p class="quote small">Small Quote: Text is the primary way that users digest content and accomplish work,
+                so it’s
+                important to use good typographic principles to establish a clear visual hierarchy and to maximize
+                legibility.</p>
+            <p>Text is the primary way that users digest content and accomplish work, so it’s important to use
+                good typographic principles to establish a clear visual hierarchy and to maximize legibility.</p>
+            <h3 class="m-t-50">Default font family: Open Sans
+                <a target="_blank" href="https://fonts.google.com/specimen/Open+Sans">(Google
+                    Font)</a></h3>
+            <p>Open Sans is a humanist sans serif typeface designed by Steve Matteson, Type Director of Ascender Corp.
+                This
+                version contains the complete 897 character set, which includes the standard ISO Latin 1, Latin CE,
+                Greek and
+                Cyrillic character sets. Open Sans was designed with an upright stress, open forms and a neutral, yet
+                friendly
+                appearance. It was optimized for print, web, and mobile interfaces, and has excellent legibility
+                characteristics
+                in its letterforms.</p>
+            <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+            <p>a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+            <p>0 1 2 3 4 5 6 7 8 9</p>
+            <h3 class="m-t-50">Lists</h3>
+            <ul>
+                <li>It was optimized for print, web, and mobile interfaces, and has excellent legibility characteristics
+                    in its letterforms.
+                </li>
+                <li>It was optimized for print, web, and mobile interfaces, and has excellent legibility characteristics
+                    in its letterforms.
+                </li>
+            </ul>
+            <ol>
+                <li>It was optimized for print, web, and mobile interfaces, and has excellent legibility characteristics
+                    in its letterforms.
+                </li>
+                <li>It was optimized for print, web, and mobile interfaces, and has excellent legibility characteristics
+                    in its letterforms.
+                </li>
+            </ol>
+            <h3 class="m-t-50">Typography Sizes</h3>
+            <h1>The quick brown fox jumps over the lazy dog.</h1>
+            <h2>The quick brown fox jumps over the lazy dog.</h2>
+            <h3>The quick brown fox jumps over the lazy dog.</h3>
+            <h4>The quick brown fox jumps over the lazy dog.</h4>
+            <h5>The quick brown fox jumps over the lazy dog.</h5>
+            <p class="m-t-40 m-b-40">.h1 through .h6 classes are also available for situations were it should match the
+                font
+                styling of a heading but
+                cannot use the associated HTML element.</p>
+            <span class="h1">The quick brown fox jumps over the lazy dog.</span>
+            <span class="h2">The quick brown fox jumps over the lazy dog.</span>
+            <span class="h3">The quick brown fox jumps over the lazy dog.</span>
+            <span class="h4">The quick brown fox jumps over the lazy dog.</span>
+            <span class="h5">The quick brown fox jumps over the lazy dog.</span>
+            <h3 class="m-t-50">Links</h3>
+            <div>
+                <a href="#">This is a link</a>
+            </div>
+            <div class="m-t-10">
+                <a class="underscored" href="#">This is an underscored link</a>
+            </div>
         </div>
-    </div>
-    <h2>Typography</h2>
-    <p class="quote">Text is the primary way that users digest content and accomplish work, so it’s important to use
-        good typographic
-        principles to establish a clear visual hierarchy and to maximize legibility.</p>
-    <h3 class="m-t-50">Open Sans (Google Font)</h3>
-    <p>Open Sans is a humanist sans serif typeface designed by Steve Matteson, Type Director of Ascender Corp. This
-        version contains the complete 897 character set, which includes the standard ISO Latin 1, Latin CE, Greek and
-        Cyrillic character sets. Open Sans was designed with an upright stress, open forms and a neutral, yet friendly
-        appearance. It was optimized for print, web, and mobile interfaces, and has excellent legibility characteristics
-        in its letterforms.</p>
-    <p class="quote">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
-    <p class="quote">a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
-    <p class="quote">0 1 2 3 4 5 6 7 8 9</p>
-    <h3 class="m-t-50">Typography Sizes</h3>
-    <h1>The quick brown fox jumps over the lazy dog.</h1>
-    <h2>The quick brown fox jumps over the lazy dog.</h2>
-    <h3>The quick brown fox jumps over the lazy dog.</h3>
-    <h4>The quick brown fox jumps over the lazy dog.</h4>
-    <h5>The quick brown fox jumps over the lazy dog.</h5>
-    <p class="m-t-40 m-b-40">.h1 through .h6 classes are also available for situations were it should match the font
-        styling of a heading but
-        cannot use the associated HTML element.</p>
-    <span class="h1">The quick brown fox jumps over the lazy dog.</span>
-    <span class="h2">The quick brown fox jumps over the lazy dog.</span>
-    <span class="h3">The quick brown fox jumps over the lazy dog.</span>
-    <span class="h4">The quick brown fox jumps over the lazy dog.</span>
-    <span class="h5">The quick brown fox jumps over the lazy dog.</span>
-    <h3 class="m-t-50">Links</h3>
-    <a href="#">This is a link</a>
-    <h2 class="m-t-90">Grids</h2>
-    <h3 class="m-t-50">Equal Width</h3>
-    <div class="grid">
-        <div class="preview-item m-g-10"></div>
-    </div>
-    <div class="grid">
-        <div class="preview-item m-g-10"></div>
-        <div class="preview-item m-g-10"></div>
-    </div>
-    <div class="grid">
-        <div class="preview-item m-g-10"></div>
-        <div class="preview-item m-g-10"></div>
-        <div class="preview-item m-g-10"></div>
-    </div>
-    <div class="grid responsive tablet">
-        <div class="preview-item m-g-10"></div>
-        <div class="preview-item m-g-10"></div>
-        <div class="preview-item m-g-10"></div>
-        <div class="preview-item m-g-10"></div>
-    </div>
-    <h3>Variable Width</h3>
-    <div class="grid">
-        <div class="preview-item m-g-10 w-20"></div>
-    </div>
-    <div class="grid">
-        <div class="preview-item m-g-10 w-30"></div>
-        <div class="preview-item m-g-10 w-40"></div>
     </div>
     <div class="grid wrap">
-        <div class="preview-item m-g-10 w-50"></div>
-        <div class="preview-item m-g-10 w-10"></div>
-        <div class="preview-item m-g-10 w-40"></div>
-    </div>
-    <div class="grid">
-        <div class="preview-item m-g-10 w-20"></div>
-        <div class="preview-item m-g-10 w-40"></div>
-        <div class="preview-item m-g-10 w-30"></div>
-        <div class="preview-item m-g-10 w-10"></div>
-    </div>
-    <h3>Alignment</h3>
-    <div class="grid center m-b-20">
-        <div class="preview-item m-r-10 w-30"></div>
-        <div class="preview-item m-r-10 w-30"></div>
-        <div class="preview-item m-r-10 w-30"></div>
-    </div>
-    <div class="grid m-b-20">
-        <div class="preview-item m-r-10 w-30"></div>
-        <div class="preview-item m-r-10 w-30"></div>
-        <div class="preview-item m-r-10 w-30"></div>
-    </div>
-    <div class="grid end m-b-20">
-        <div class="preview-item m-r-10 w-30"></div>
-        <div class="preview-item m-r-10 w-30"></div>
-        <div class="preview-item m-r-10 w-30"></div>
-    </div>
-    <h3>Combined grids</h3>
-    <div class="grid responsive mobile center m-b-20">
-        <div class="preview-item m-r-10 w-10"></div>
-        <div class="grid responsive tablet center">
-            <div class="preview-item2 m-r-10 w-30"></div>
-            <div class="preview-item2 m-r-10 w-40"></div>
-            <div class="preview-item2 m-r-10 w-30"></div>
+        <div class="m-g-10 w-10">
+            <h2>Grids</h2>
         </div>
-        <div class="preview-item m-r-10 w-10"></div>
-    </div>
-    <div class="grid center m-b-20">
-        <div class="preview-item m-r-10 w-70"></div>
-        <div class="grid center w-20">
-            <div class="preview-item2 m-r-10 w-50"></div>
-            <div class="preview-item2 m-r-10 w-50"></div>
+        <div class="m-g-10 w-80">
+            <h3 class="m-t-30">Equal Width</h3>
+            <div class="grid">
+                <div class="preview-item m-g-10"></div>
+            </div>
+            <div class="grid">
+                <div class="preview-item m-g-10"></div>
+                <div class="preview-item m-g-10"></div>
+            </div>
+            <div class="grid">
+                <div class="preview-item m-g-10"></div>
+                <div class="preview-item m-g-10"></div>
+                <div class="preview-item m-g-10"></div>
+            </div>
+            <div class="grid responsive tablet">
+                <div class="preview-item m-g-10"></div>
+                <div class="preview-item m-g-10"></div>
+                <div class="preview-item m-g-10"></div>
+                <div class="preview-item m-g-10"></div>
+            </div>
+            <h3>Variable Width</h3>
+            <div class="grid">
+                <div class="preview-item m-g-10 w-20"></div>
+            </div>
+            <div class="grid">
+                <div class="preview-item m-g-10 w-30"></div>
+                <div class="preview-item m-g-10 w-40"></div>
+            </div>
+            <div class="grid wrap">
+                <div class="preview-item m-g-10 w-50"></div>
+                <div class="preview-item m-g-10 w-10"></div>
+                <div class="preview-item m-g-10 w-40"></div>
+            </div>
+            <div class="grid">
+                <div class="preview-item m-g-10 w-20"></div>
+                <div class="preview-item m-g-10 w-40"></div>
+                <div class="preview-item m-g-10 w-30"></div>
+                <div class="preview-item m-g-10 w-10"></div>
+            </div>
+            <h3>Alignment</h3>
+            <div class="grid center m-b-20">
+                <div class="preview-item m-r-10 w-30"></div>
+                <div class="preview-item m-r-10 w-30"></div>
+                <div class="preview-item m-r-10 w-30"></div>
+            </div>
+            <div class="grid m-b-20">
+                <div class="preview-item m-r-10 w-30"></div>
+                <div class="preview-item m-r-10 w-30"></div>
+                <div class="preview-item m-r-10 w-30"></div>
+            </div>
+            <div class="grid end m-b-20">
+                <div class="preview-item m-r-10 w-30"></div>
+                <div class="preview-item m-r-10 w-30"></div>
+                <div class="preview-item m-r-10 w-30"></div>
+            </div>
+            <h3>Combined grids</h3>
+            <div class="grid responsive mobile center m-b-20">
+                <div class="preview-item m-r-10 w-10"></div>
+                <div class="grid responsive tablet center">
+                    <div class="preview-item2 m-r-10 w-30"></div>
+                    <div class="preview-item2 m-r-10 w-40"></div>
+                    <div class="preview-item2 m-r-10 w-30"></div>
+                </div>
+                <div class="preview-item m-r-10 w-10"></div>
+            </div>
+            <div class="grid center m-b-20">
+                <div class="preview-item m-r-10 w-70"></div>
+                <div class="grid center w-20">
+                    <div class="preview-item2 m-r-10 w-50"></div>
+                    <div class="preview-item2 m-r-10 w-50"></div>
+                </div>
+                <div class="preview-item m-r-10 w-10"></div>
+            </div>
+            <div class="grid center m-b-20">
+                <div class="preview-item m-r-10 w-10"></div>
+                <div class="grid center w-20">
+                    <div class="preview-item2 m-r-10 w-50"></div>
+                    <div class="preview-item2 m-r-10 w-50"></div>
+                </div>
+                <div class="preview-item m-r-10 w-70"></div>
+            </div>
         </div>
-        <div class="preview-item m-r-10 w-10"></div>
-    </div>
-    <div class="grid center m-b-20">
-        <div class="preview-item m-r-10 w-10"></div>
-        <div class="grid center w-20">
-            <div class="preview-item2 m-r-10 w-50"></div>
-            <div class="preview-item2 m-r-10 w-50"></div>
-        </div>
-        <div class="preview-item m-r-10 w-70"></div>
     </div>
 </div>
 </body>
