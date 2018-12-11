@@ -1,6 +1,5 @@
 // MARGINS
 $margin-amount: 20;
-
 @mixin margin-generator {
     @for $i from 1 through $margin-amount {
         .m-g-#{$i*5} {
@@ -23,9 +22,32 @@ $margin-amount: 20;
 
 @include margin-generator;
 
+// PADDINGS
+$padding-amount: 20;
+@mixin padding-generator {
+    @for $i from 1 through $padding-amount {
+        .p-g-#{$i*5} {
+            padding: ($i*5)+px;
+        }
+        .p-t-#{$i*5} {
+            padding-top: ($i*5)+px;
+        }
+        .p-b-#{$i*5} {
+            padding-bottom: ($i*5)+px;
+        }
+        .p-r-#{$i*5} {
+            padding-right: ($i*5)+px;
+        }
+        .p-l-#{$i*5} {
+            padding-left: ($i*5)+px;
+        }
+    }
+}
+
+@include padding-generator;
+
 // SIZES
 $size-amount: 10;
-
 @mixin size-generator {
     @for $i from 1 through $size-amount {
         .w-#{$i*10} {

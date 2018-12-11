@@ -1,0 +1,8 @@
+// https://css-tricks.com/snippets/sass/mixin-prefix-properties/
+@mixin prefix( $property, $value ) {
+    #{'-webkit-' + $property}: $property;
+    #{'-moz-' + $property}: $property;
+    #{'-ms-' + $property}: $property;
+    #{'-o-' + $property}: $property;
+    #{$property}: $property;
+}

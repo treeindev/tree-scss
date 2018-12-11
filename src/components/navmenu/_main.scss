@@ -1,0 +1,28 @@
+.cmp__header {
+    padding: 15px 40px;
+    border-bottom: 1px solid #dadada;
+
+    &.fixed {
+        position: fixed;
+        z-index: 10;
+        background-color: $colours-background;
+        width: 100%;
+        display: block;
+    }
+
+    // In case headline is used over a logotype
+    .cmp__header-logo h2 {
+        margin: 0px 0px 10px 0px;
+    }
+
+    nav a {
+        color: $colours-dark;
+        font-weight: initial;
+        text-transform: uppercase;
+        padding-right: 18px;
+
+        &:hover {
+            color: $colours-primary;
+        }
+    }
+}

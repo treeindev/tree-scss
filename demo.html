@@ -16,12 +16,29 @@
             background-color: rgba(129, 186, 203, 0.88);
             height: 60px;
         }
+
+        .logotype {
+            font-family: 'ProximaNova', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 300;
+            font-size: 30px;
+        }
     </style>
 </head>
 
 <body>
-<div class="layout-main">
-    <h2>Tree SCSS</h2>
+<header class="cmp__header fixed">
+    <div class="cmp__header-logo">
+        <h2 class="logotype">tree scss</h2>
+    </div>
+    <nav>
+        <a href="#">Item 01</a>
+        <a href="#">Item 02</a>
+        <a href="#">Item 03</a>
+    </nav>
+</header>
+<div class="layout-main p-t-100">
     <div class="grid wrap">
         <div class="m-g-10 w-10">
             <h2>Colours</h2>
@@ -46,8 +63,7 @@
             <p class="colored"><strong>Primary class:</strong> Used to color any text element with the primary colour
             </p>
             <p class="colored-secondary"><strong>Secondary class:</strong> Used to color any text element with the
-                secondary
-                colour
+                secondary colour
             </p>
         </div>
     </div>
