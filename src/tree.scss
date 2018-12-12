@@ -3,6 +3,7 @@
 ////
 ////
 // Base files
+@import 'mixins';
 @import 'variables';
 @import 'grids';
 @import 'margins';
@@ -10,4 +11,4 @@
 @import 'normalise';
 // Components
 @import './components/colour-palette/main';
-@import './components/header/main';
+@import './components/navmenu/main';
