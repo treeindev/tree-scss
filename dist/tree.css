@@ -722,6 +722,9 @@ body {
   margin: 0px;
   background-color: #ffffff; }
 
+img.full {
+  width: 100%; }
+
 .cmp__palette .cmp__palette-item {
   height: 84px;
   padding: 20px 15px 15px; }
