@@ -1,0 +1,29 @@
+// Shared configurations
+.cmp__hover-fade {
+    position: relative;
+}
+
+// Individual fades
+.cmp__hover-fade {
+    .base {
+
+    }
+
+    .caption {
+        position: absolute;
+        top: 0px;
+        opacity: 0;
+        background-color: $cmp__hover-fade-colour-background;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &:hover {
+        .caption {
+            @include prefix(transition, opacity 0.3s ease-in-out);
+            opacity: 1;
+        }
+    }
+}
