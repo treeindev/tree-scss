@@ -827,7 +827,7 @@ img.full {
             -o-transition: all 0.3s ease-in-out;
             transition: all 0.3s ease-in-out; } }
 
-.cmp__hover-fade {
+.cmp__hover-fade, .cmp__hover-push, .cmp__hover-zoom {
   position: relative; }
 
 .cmp__hover-fade .caption {
@@ -838,12 +838,68 @@ img.full {
   height: 100%;
   display: flex;
   align-items: center;
-  flex-wrap: wrap; }
-
-.cmp__hover-fade:hover .caption {
+  flex-wrap: wrap;
   -webkit-transition: opacity 0.3s ease-in-out;
   -moz-transition: opacity 0.3s ease-in-out;
   -ms-transition: opacity 0.3s ease-in-out;
   -o-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out; }
+
+.cmp__hover-fade:hover .caption {
   opacity: 1; }
+
+.cmp__hover-push {
+  overflow: hidden; }
+  .cmp__hover-push.up .caption, .cmp__hover-push.down .caption, .cmp__hover-push.left .caption, .cmp__hover-push.right .caption {
+    position: absolute;
+    background-color: #ffffff;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+  .cmp__hover-push.up .caption {
+    top: 100%; }
+  .cmp__hover-push.up:hover .caption {
+    top: 0px; }
+  .cmp__hover-push.down .caption {
+    bottom: 100%; }
+  .cmp__hover-push.down:hover .caption {
+    bottom: 0px; }
+  .cmp__hover-push.left .caption {
+    left: 100%;
+    top: 0;
+    width: 100%; }
+  .cmp__hover-push.left:hover .caption {
+    left: 0px; }
+  .cmp__hover-push.right .caption {
+    right: 100%;
+    top: 0;
+    width: 100%; }
+  .cmp__hover-push.right:hover .caption {
+    right: 0px; }
+
+.cmp__hover-zoom {
+  overflow: hidden; }
+  .cmp__hover-zoom .caption {
+    top: 0px;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+  .cmp__hover-zoom.out .caption {
+    transform: scale(0.7); }
+  .cmp__hover-zoom.in .caption {
+    transform: scale(1.3); }
+  .cmp__hover-zoom:hover .caption {
+    opacity: 1;
+    transform: scale(1); }

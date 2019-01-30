@@ -1,13 +1,10 @@
 // Shared configurations
-.cmp__hover-fade {
+.cmp__hover-fade, .cmp__hover-push, .cmp__hover-zoom {
     position: relative;
 }
 
 // Individual fades
 .cmp__hover-fade {
-    .base {
-
-    }
 
     .caption {
         position: absolute;
@@ -18,12 +15,108 @@
         display: flex;
         align-items: center;
         flex-wrap: wrap;
+        @include prefix(transition, opacity $cmp__hover-transition ease-in-out);
     }
 
     &:hover {
         .caption {
-            @include prefix(transition, opacity 0.3s ease-in-out);
             opacity: 1;
+        }
+    }
+}
+
+.cmp__hover-push {
+    overflow: hidden;
+
+    &.up, &.down, &.left, &.right {
+        .caption {
+            position: absolute;
+            background-color: $cmp__hover-fade-colour-background;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            @include prefix(transition, all $cmp__hover-transition ease-in-out);
+        }
+    }
+
+    &.up {
+        .caption {
+            top: 100%;
+        }
+
+        &:hover {
+            .caption {
+                top: 0px;
+            }
+        }
+    }
+
+    &.down {
+        .caption {
+            bottom: 100%;
+        }
+
+        &:hover {
+            .caption {
+                bottom: 0px;
+            }
+        }
+    }
+
+    &.left {
+        .caption {
+            left: 100%;
+            top: 0;
+            width: 100%;
+        }
+
+        &:hover {
+            .caption {
+                left: 0px;
+            }
+        }
+    }
+
+    &.right {
+        .caption {
+            right: 100%;
+            top: 0;
+            width: 100%;
+        }
+
+        &:hover {
+            .caption {
+                right: 0px;
+            }
+        }
+    }
+}
+
+.cmp__hover-zoom {
+    overflow: hidden;
+
+    .caption {
+        top: 0px;
+        opacity: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        @include prefix(transition, all $cmp__hover-transition ease-in-out);
+    }
+
+    &.out .caption {
+        transform: scale(0.7);
+    }
+
+    &.in .caption {
+        transform: scale(1.3);
+    }
+
+    &:hover {
+        .caption {
+            opacity: 1;
+            transform: scale(1);
         }
     }
 }

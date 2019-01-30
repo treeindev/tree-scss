@@ -1,4 +1,6 @@
 .idea/
+.git
+.gitignore
 .DS_Store
 .npmrc
 node_modules
