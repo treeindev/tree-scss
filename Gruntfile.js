@@ -2,6 +2,7 @@ module.exports = function (grunt) {
     const sass = require('node-sass');
     require('load-grunt-tasks')(grunt);
     require('grunt-contrib-cssmin')(grunt);
+    require('grunt-contrib-jshint')(grunt);
 
     grunt.initConfig({
         sass: {
@@ -25,8 +26,23 @@ module.exports = function (grunt) {
                     'dist/tree.min.css': 'dist/tree.css'
                 }
             }
+        },
+        jshint: {
+            all: [
+                'test/*.js'
+            ],
+            options: {
+                jshintrc: '.jshintrc'
+            }
+        },
+        coveralls: {
+            basic_test: {
+                src: 'tests/lcov.info'
+            }
         }
     });
 
-    grunt.registerTask('build', ['sass', 'cssmin']);
+    grunt.loadNpmTasks('grunt-coveralls');
+
+    grunt.registerTask('build', ['sass', 'cssmin', 'jshint']);
 };
