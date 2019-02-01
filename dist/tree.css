@@ -835,6 +835,7 @@ img.full {
   top: 0px;
   opacity: 0;
   background-color: #ffffff;
+  width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -853,6 +854,7 @@ img.full {
   .cmp__hover-push.up .caption, .cmp__hover-push.down .caption, .cmp__hover-push.left .caption, .cmp__hover-push.right .caption {
     position: absolute;
     background-color: #ffffff;
+    width: 100%;
     height: 100%;
     display: flex;
     align-items: center;

@@ -51,7 +51,7 @@ $size-amount: 10;
 @mixin size-generator {
     @for $i from 1 through $size-amount {
         .w-#{$i*10} {
-            width: ($i*10)+%;
+            width: percentage($i / 10);
         }
     }
 }
