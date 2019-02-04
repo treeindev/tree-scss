@@ -1,0 +1,67 @@
+.cmp__image-gallery {
+    .item {
+        cursor: pointer;
+
+        img {
+            width: 100%;
+        }
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    &.cmp__modal {
+        background-color: rgba(0, 0, 0, 0.75);
+
+        .frame {
+            background: transparent;
+            border: none;
+            min-width: 0px;
+            width: 100%;
+            top: 50%;
+
+            @media screen and (min-width: $device-tablet) {
+                min-width: 900px;
+                width: 50%;
+            }
+
+            .container {
+                padding: 0;
+                margin: 0;
+
+                .arrows {
+                    width: 20px;
+                    height: 20px;
+                    border-color: #ffffff;
+                    color: #ffffff;
+                    position: absolute;
+                    top: 50%;
+                    margin-top: -31px;
+                    z-index: 1;
+                }
+
+                .prev {
+                    border-bottom: 3px solid;
+                    border-left: 3px solid;
+                    @include prefix(transform, rotate(45deg));
+                    left: -55px;
+                }
+
+                .next {
+                    border-bottom: 3px solid;
+                    border-left: 3px solid;
+                    @include prefix(transform, rotate(-135deg));
+                    right: -55px;
+                }
+
+                img {
+                    display: block;
+                    width: 100%;
+                    z-index: 1;
+                    position: relative;
+                    box-shadow: 0 0 13px 2px rgba(14, 14, 14, 0.45);
+                }
+            }
+        }
+    }
+}
