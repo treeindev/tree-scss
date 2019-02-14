@@ -47,11 +47,11 @@ $padding-amount: 20;
 @include padding-generator;
 
 // SIZES
-$size-amount: 10;
+$size-amount: 20;
 @mixin size-generator {
     @for $i from 1 through $size-amount {
-        .w-#{$i*10} {
-            width: percentage($i / 10);
+        .w-#{$i*5} {
+            width: percentage($i / 2 / 10);
         }
     }
 }

@@ -1,3 +1,5 @@
-import sayhi from './components/image-gallery/script.js';
+import Component__Modal from './components/modal/script.mjs';
+const cmp__modal = new Component__Modal();
 
-sayhi();
+import Component__ImageGallery from './components/image-gallery/script.mjs';
+new Component__ImageGallery( cmp__modal );
