@@ -86,15 +86,27 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/components/image-gallery/script.js":
-/*!************************************************!*\
-  !*** ./src/components/image-gallery/script.js ***!
-  \************************************************/
+/***/ "./src/components/image-gallery/script.mjs":
+/*!*************************************************!*\
+  !*** ./src/components/image-gallery/script.mjs ***!
+  \*************************************************/
 /*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nfunction sayhi() {\n    console.log('Hello');\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (sayhi);\n\n\n//# sourceURL=webpack:///./src/components/image-gallery/script.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n// Image Gallery Component\n//\n// This component has the following dependencies:\n//      - Component__Modals\n//\n\nclass Component__ImageGallery {\n\n    constructor(modals) {\n        this.modals = modals;\n\n        setTimeout(function () {\n            modals.showModal('<div class=\"arrows prev\"></div><div class=\"arrows next\"></div><img src=\"https://i.pinimg.com/236x/54/84/e2/5484e289c5af5c3414a30cb14a768ea8--winding-road-the-road.jpg\"/>', ['cmp__image-gallery', '', '']);\n        }, 2000);\n    }\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Component__ImageGallery);\n\n\n//# sourceURL=webpack:///./src/components/image-gallery/script.mjs?");
+
+/***/ }),
+
+/***/ "./src/components/modal/script.mjs":
+/*!*****************************************!*\
+  !*** ./src/components/modal/script.mjs ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// Modal Component\n//\n\nclass Component__Modal {\n\n    constructor() {\n    }\n\n    showModal(content, classes = ['', '', '']) {\n        // Dynamically create DOM elements but do not create node structure.\n        const modal = document.createElement(\"div\");\n        const frame = document.createElement(\"div\");\n        const container = document.createElement(\"div\");\n\n        // Each element class can be set by sending a custom array of strings.\n        modal.className = 'cmp__modal ' + classes[0];\n        frame.className = 'frame ' + classes[1];\n        container.className = 'container ' + classes[2];\n\n        // The modal content gets passed as string. Is then appended to the DOM.\n        container.innerHTML = content;\n        frame.appendChild(container);\n        modal.appendChild(frame);\n        modal.style.display = 'block';\n        document.body.appendChild(modal);\n\n        setTimeout(function () {\n            modal.style.opacity = 1;\n        }, 300);\n    }\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Component__Modal);\n\n\n//# sourceURL=webpack:///./src/components/modal/script.mjs?");
 
 /***/ }),
 
@@ -106,7 +118,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nfunction sayhi() {\n    conso
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_image_gallery_script_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/image-gallery/script.js */ \"./src/components/image-gallery/script.js\");\n\n\nObject(_components_image_gallery_script_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_modal_script_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/modal/script.mjs */ \"./src/components/modal/script.mjs\");\n/* harmony import */ var _components_image_gallery_script_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/image-gallery/script.mjs */ \"./src/components/image-gallery/script.mjs\");\n\nconst cmp__modal = new _components_modal_script_mjs__WEBPACK_IMPORTED_MODULE_0__[\"default\"]();\n\n\nnew _components_image_gallery_script_mjs__WEBPACK_IMPORTED_MODULE_1__[\"default\"]( cmp__modal );\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 

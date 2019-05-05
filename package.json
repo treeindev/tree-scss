@@ -2,11 +2,10 @@
     "name": "tree-scss",
     "version": "0.1.0",
     "description": "A SASS library with basic elements for building intuitive and powerful user interfaces (UI)",
-    "main": "index.js",
+    "main": "src/index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "grunt build",
-        "pack": "webpack"
+        "build": "webpack"
     },
     "keywords": [
         "sass",
