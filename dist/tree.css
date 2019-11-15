@@ -19,22 +19,30 @@
     .grid.responsive.mobile {
       flex-wrap: wrap; }
       .grid.responsive.mobile > * {
-        width: 100%; } }
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0; } }
   @media (max-width: 736px) {
     .grid.responsive.tablet {
       flex-wrap: wrap; }
       .grid.responsive.tablet > * {
-        width: 100%; } }
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0; } }
   @media (max-width: 980px) {
     .grid.responsive.small {
       flex-wrap: wrap; }
       .grid.responsive.small > * {
-        width: 100%; } }
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0; } }
   @media (max-width: 1280px) {
     .grid.responsive.laptop {
       flex-wrap: wrap; }
       .grid.responsive.laptop > * {
-        width: 100%; } }
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0; } }
 
 .m-g-5 {
   margin: 5px; }

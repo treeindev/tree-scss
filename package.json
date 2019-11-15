@@ -1,6 +1,6 @@
 {
     "name": "tree-scss",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "A SASS library with basic elements for building intuitive and powerful user interfaces (UI)",
     "main": "src/index.js",
     "scripts": {
