@@ -7,3 +7,6 @@ This file is similar to the format suggested by [Keep a CHANGELOG](https://githu
 ## Unreleased
 - Implement library build using node-sass and build minifier.
 - Initial creation of the project and folder structure.
+
+## [1.0.3]
+- Fixes on the image gallery modal
